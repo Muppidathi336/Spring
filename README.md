@@ -9,3 +9,6 @@ Object instantiation by the constructor/class method/instance method. So can mai
 
 #DI
 dependency injection=> dependency b/w the instances is injected by either xml/annotation/plain java. configuration or annotation decides which object to be used.
+
+#JPA and Hibernate
+Based on JPA data access specification(that defines how to persist data in Java applications), ORMapping is done by the hibernate tool. In hibernate, we use Session for handling the persistence of data, while in JPA, we use Entity Manager.
