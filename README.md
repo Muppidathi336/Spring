@@ -23,12 +23,14 @@ Based on JPA data access specification(that defines how to persist data in Java 
 @Entity, @Column, @Table etc.)
 ###### Service layer: 
 will deligate to the find/save method in DAO layer. These method will allow to execute sql queries
+advantage over JDBC: can use hql(not db specific queries)
 
 ##### Persistence with hibernate
 DAO layer: use session factory to manage database sessions and transactions
 
 ##### Persistence with hibernate and jpa
 DAO layer: declares an EntityManager, as a @PersistenceContext to manage transaction and to manage database sessions.
+advantage over hibernate: can switch between differenct databases
 
 ##### Persistence with Spring Data jpa:
 DAO layer: declares an EntityManager, as a @PersistenceContext to manage transaction. The DAO layer is simply an interface that extends the CrudRepository
