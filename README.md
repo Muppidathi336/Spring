@@ -25,6 +25,8 @@ Based on JPA data access specification(that defines how to persist data in Java 
 will deligate to the find/save method in DAO layer. These method will allow to execute sql queries
 advantage over JDBC: can use hql(not db specific queries)
 
+
+
 ##### Persistence with hibernate
 DAO layer: use session factory to manage database sessions and transactions
 
